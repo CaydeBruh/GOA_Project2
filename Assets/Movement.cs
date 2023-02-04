@@ -62,8 +62,8 @@ public class Movement : MonoBehaviour
 
 
          }
-
-        if(Input.GetKey(KeyCode.F))
+        rb2d.AddForce(new Vector2(speed, 0), ForceMode2D.Impulse);
+        if (Input.GetKey(KeyCode.F))
         {
             Instantiate(ProjectilePrefab, LaunchOffSet.position, transform.rotation);
         }
